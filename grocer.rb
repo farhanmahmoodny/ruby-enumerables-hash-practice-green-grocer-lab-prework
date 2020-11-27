@@ -1,12 +1,12 @@
 def consolidate_cart(cart)
-  new = cart.map do |item|
+  new = {}
+  cart.map do |item|
     if new.include?(item)
       item[:count] += 1
     else
       item[:count] = 1
     end
   end
-  new
 end
 
 def apply_coupons(cart, coupons)
