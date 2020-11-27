@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
   new = cart.map do |item|
-    if new.include?(item)
+    if new.includes?(item)
       item[:price] += 1
     else
       item[:price] = 1
