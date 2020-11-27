@@ -1,5 +1,6 @@
 def consolidate_cart(cart)
-  new = cart.collect do
+  new = cart.map do |item|
+    if new[key]
   new
 end
 
