@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  new = {}
+  new = cart.collect do
   new
 end
 
