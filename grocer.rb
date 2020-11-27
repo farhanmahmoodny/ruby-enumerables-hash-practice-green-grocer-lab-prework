@@ -5,7 +5,9 @@ def consolidate_cart(cart)
       new[item.keys][:count] += 1
     else
       new[item.keys] = {
-        price: item.values[:]
+        price: item.values[:price],
+        clearance: item.values[:clearance],
+        count: 1
       }
     end
   end
