@@ -2,9 +2,9 @@ def consolidate_cart(cart)
   new = {}
   cart.each do |item|
     if new[item.keys]
-      item[:count] += 1
+      new[item.keys][:count] += 1
     else
-      item[:count] = 1
+      new[item.keys][:count] = 1
     end
   end
   new
